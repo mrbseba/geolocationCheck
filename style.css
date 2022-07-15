@@ -1,0 +1,28 @@
+.firstTopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  height: 500px;
+  width: 60%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: 2px;
+  border-color: #000;
+  margin: 0 20% 0 20%;
+}
+.container form {
+  margin-top: 5%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.container form input[type=submit] {
+  margin-bottom: 1%;
+}/*# sourceMappingURL=style.css.map */

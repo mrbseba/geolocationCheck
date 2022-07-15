@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--sass link-->
+    <link rel="stylesheet" href="style.css">
+    <title>my map</title>
+  </head>
+  <body>
+    <!--Find the coordonate of my geolocaiton-->
+    <div class="firstTopContainer">
+      <p>
+        Your location is <span id="latitude">0.00</span>°
+        latitude by <span id="longitude">0.00</span>° longitude.
+      </p>
+      <button id="get-location">
+        Get My Location
+      </button>
+    </div>
+    <!--Intergrate the map from my geolocation-->
+
+    <!--The div element for the map -->
+    <div class="firstTopContainer">
+      <div>
+        <h3>My Location On Google Maps</h3>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <!--Create API for wheather-->
+    <div class="container">
+      <!-- Inpur form for weather -->
+      <form id="input">
+        <input type="text" id="city" placeholder="Enter City Name"><br>
+        <input type="submit" value="Get Updates">
+      </form>
+      <!-- Second block for weather form -->
+      <div class="weatherContainer">
+        <marquee id="cityName"></marquee>
+        <span id="temp"></span>
+        <span id="main"></span>
+        <marquee id="description"></marquee>
+      </div>
+    </div>
+    <!--End the API for weather-->
+
+  </body>
+  <!-- Botton part of the web app -->
+  <footer>
+    <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"defer></script>
+  </footer>
+</html>
